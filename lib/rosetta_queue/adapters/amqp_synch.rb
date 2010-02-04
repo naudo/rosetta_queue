@@ -17,7 +17,6 @@ module RosettaQueue
         end
 
         def unsubscribe
-          @queue.unsubscribe
           conn.stop
         end
 
