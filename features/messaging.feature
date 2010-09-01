@@ -1,4 +1,4 @@
-Story: Producing and Consuming
+Feature: Producing and Consuming
 
   As a RosettaQueue user
   I want to publish and consume point-to-point using various messaging protocols
@@ -19,7 +19,7 @@ Story: Producing and Consuming
     | amqp_synch    | foo      |  queue.foo     |
     | amqp_evented  | bar      |  queue.bar     |
     | stomp         | baz      |  /queue/baz    |
-#| beanstalk     | baz      |  baz           |
+    | beanstalk     | baz      |  baz           |
 
   Scenario Outline: Delete queue
     Given RosettaQueue is configured for '<Adapter>'
